@@ -26,7 +26,7 @@ pub fn main() void {
     // It's okay to access zen_manyptr just like an array or slice as
     // long as you keep track of the length yourself!
     //
-    // A "string" in Zig is a pointer to an array of const u8 values
+    // A "string" in Zig is a pointer to an array of const u8 values // NOTE: string under the hood
     // (or a slice of const u8 values, as we saw above). So, we could
     // treat a "many-item pointer" of const u8 as a string as long as
     // we can CONVERT IT TO A SLICE. (Hint: we do know the length!)
