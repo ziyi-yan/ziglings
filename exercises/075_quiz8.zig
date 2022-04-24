@@ -49,7 +49,11 @@ const Path = struct {
 //
 // Please fill in the body of this function!
 fn makePath(from: *Place, to: *Place, dist: u8) Path {
-
+    return Path{
+        .from = from, // from: Archer's Point
+        .to = to,   //   to: Bridge
+        .dist = dist,
+    };
 }
 
 // Using our new function, these path definitions take up considerably less
